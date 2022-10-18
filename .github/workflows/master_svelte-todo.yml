@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '18.x'
 
       - name: npm install, build, and test
         run: |
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'svelte-todo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AA5E530648A54708A1650C995CAEE8A3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E107015AF7FA4C95B08D69EE9A4441CC }}
           package: .
